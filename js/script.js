@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
-	const slides = document.querySelectorAll(".slideshow__container");
+
+	const slides = document.querySelectorAll(".slideshow__image");
 	const dots = document.querySelectorAll(".dot");
 	let currentSlide = 0;
 
@@ -11,12 +12,12 @@ document.addEventListener("DOMContentLoaded", function() {
 	}
 
 	const nextSlide = () => {
-		currentSlide = (currentSlide + 1 + slides.length) % slides.length;
+		currentSlide = (currentSlide + 1) % slides.length;
 		showSlide(currentSlide);
 	}
 
 	const previousSlide = () => {
-		currentSlide = (currentSlide - 1) % slides.length;
+		currentSlide = (currentSlide - 1 + slides.length) % slides.length;
 		showSlide(currentSlide);
 	}
 
