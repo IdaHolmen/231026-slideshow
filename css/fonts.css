@@ -1,0 +1,11 @@
+@font-face {
+	font-family: 'K2D';
+	src: url(../assets/K2D-Medium.ttf);
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'KD2';
+	src: url(../assets/K2D-Bold.ttf);
+	font-weight: 600;
+}
