@@ -3,8 +3,15 @@
 
 	--font-weight-normal: 400;
 	--font-weight-bold: 600;
+
+	--font-size-small: 1rem;
+	--font-size-medium: 2rem;
+	--font-size-large: 3rem;
 	
 	--spacing-small: 0.5rem;
 	--spacing-medium: 1rem;
 	--spacing-large: 1.5rem;
+	--spacing-extra-large: 3rem;
+
+	--border-radius: 20px;
 }
