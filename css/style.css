@@ -15,47 +15,51 @@
 }	
 
 .previous, .next {
+	width: var(--button-size);
+	height: var(--button-size);
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
 	cursor: pointer;
 	border-radius: var(--border-radius);
+	background-color: var(--button-color-primary);
 }
 
 .previous:hover, .next:hover {
-	background-color: #d9d9d981;
+	background-color: var(--button-color-secondary);
 }
 
 .previous:active, .next:active {
-	background-color: #D9D9D9;
+	background-color: var(--button-color-tertiary);
 }
 
 .previous {
 	left: 0;
+	margin-left: var(--spacing-tiny);
 }
 
 .next {
 	right: 0;
+	margin-right: var(--spacing-tiny)
 }
 
 .dots__container {
-	display: flex;
 	position: absolute;
 	bottom: 0;
 	left: 45%;
-	margin-bottom: 0.325rem;
+	margin-bottom: var(--spacing-tiny);
 }
 
 .dot {
 	display: inline-block;
-	width: 0.625rem;
-	height: 0.625rem;
-	background-color: #757575;
+	width: var(--dots-size);
+	height: var(--dots-size);
+	background-color: var(--dots-color-primary);
 	border-radius: 50%;
-	margin: 0 0.313rem;
+	margin: 0 var(--spacing-tiny);
 	cursor: pointer;
 }
 
 .active {
-	background-color: white;
+	background-color: var(--color-background);
 }
