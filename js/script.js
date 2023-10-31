@@ -30,8 +30,6 @@ document.addEventListener("DOMContentLoaded", function() {
 		});
 	}
 
-	
-
 	document.querySelector(".previous").addEventListener("click", previousSlide);
 	document.querySelector(".next").addEventListener("click", nextSlide);
 
